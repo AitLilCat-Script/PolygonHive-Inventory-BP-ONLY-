@@ -1,56 +1,56 @@
-** INPROGRESS - CLEANING UP MY WORK ** 
+# GASP+ALS with Inventory Integration  
+🚀 **REPLICATED & BLUEPRINT-ONLY** 🚀  
+*(Fully Networked - No C++ Required!)*  
 
+## About This Project  
+This repository is a **fork** of PolygonHive's GASP+ALS, with additional **Inventory System functionality** integrated.  
 
-# Game Animation Sample with Overlay Layering | Unreal Engine 5
+- Looking for the **original GAS+ALS system**? Check out [PolygonHive’s GitHub](https://github.com/PolygonHive/GASP-ALS).  
+- Want an **enhanced version** with inventory mechanics? You’re in the right place!  
+- ⚡ **Fully replicated for multiplayer games** (supports networking).  
+- 🛠 **Blueprint-Only**—No C++ required!  
 
-## Introduction
+## Features Added in This Fork  
+✔ **Fully Integrated Inventory System**  
+✔ **Supports Pickup & Item Management**  
+✔ **Modular Structure for Easy Expansion**  
+✔ **Overlay System Adjustments for Inventory Compatibility**  
+✔ **Multiplayer-Compatible (Replication Ready!)**  
+✔ **100% Blueprint-Based Implementation**  
 
-This project integrates the ALS Overlay Layering System into the new Unreal Engine Motion Matching Game Animation Sample.
-Advanced Locomotion System (ALS) provides a nice Overlay System that allows us to alter the entire locomotion animation just by applying simple overlay poses. 
+### **🔧 Inventory System Overview**  
+#### **📌 Character Inventory Updates**  
+- `CBP_Character` now includes `BPI_Inventory`, enabling the `"Pickup"` function.  
+- Inventory-related functionality can be found **inside the event graph** of `CBP_Character`.  
+- All additional inventory mechanics are organized within the `"Inventory"` folder.  
 
-## Features
+#### **📌 Overlay System Adjustments**  
+- Inside `"Overlay System" → "Overlays" → "DataAssets"`, the `"Pistol"` asset has been **modified**.  
+- Some internal data was **wiped** to ensure compatibility with inventory mechanics.  
+- **If reusing the Overlay System**, check these files to confirm integration.  
 
-- Game Animation Sample
-- Overlay layering system built with separate Anim Graphs and Linked Layers
-- All overlays from ALS
-- Basic weapon attach system from ALS
-- Basic overlay switcher widget from ALS
-- Removed Echo and Twinblast characters and Manny/Quinn 4k textures to lower project size
+### **🛠 How The Inventory System Works**  
+**Adding New Items:**  
+1. Navigate to `Content → Inventory → DT_Inventory`.  
+2. Add new items by modifying the **Data Table (`DT_Inventory`)**.  
 
-## Overview
+**Placing Pickup Items in the Game:**  
+1. Go to `Content → Inventory → Blueprints`.  
+2. Locate `BP_Pickup` and place it in the level.  
+3. Open the `"Details"` tab and set the **ID** to match an item from `DT_Inventory`.  
 
-An overview of the system is available on my YouTube channel [Polygon Hive](https://www.youtube.com/watch?v=RDWNfIqvWBk&list=PLs9e0eJQMI2aaulgKJzC8feN1UEwDkEnq)
-
-## Contributing
-
-Contributions are welcome! I hope that, with the help of the community, we can turn this into a next-gen fully featured locomotion system. 
-
-Please follow these steps to contribute:
-
-1. Clone the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature/your-feature`).
-6. Open a pull request.
-
-Please ensure your code follows the project's coding and naming standards.
-
-## License
-
-[UE-Only Content - Licensed for Use Only with Unreal Engine-based Products](https://www.unrealengine.com/en-US/eula/content)
-
-## Contact
-
-For questions, suggestions, or feedback, please contact:
-
-- Anas EL FERACHI - [anas@polygonhive.com](mailto:anas@polygonhive.com)
-
-## Support My Work
-
-- [Buy Me A Coffee](https://buymeacoffee.com/PolygonHive)
 ---
 
-Thanks for checking out the project! I hope it helps you create amazing games.
+### ☕ **Support the Original Creator - PolygonHive** ☕  
+The **GASP+ALS system** was originally developed by **PolygonHive**—if you love their work, consider buying them a coffee!  
+They need the fuel to keep creating awesome tools for the Unreal Engine community.  
 
+👉 **[Buy Me A Coffee](https://buymeacoffee.com/PolygonHive)**  
 
+---
+
+### 🚀 Future Updates  
+- More documentation on Inventory System  
+- Expanded functionality for modular game development  
+
+Stay tuned for improvements! Let me know if you have suggestions!  
